@@ -1,5 +1,16 @@
 #+title: Datamap: build simple data tables collaboratively
 
+* Mission
+
+Datamap is a simple interface to let several users build a simple data
+table collaboratively.
+
+Datamap aims at being used as an upstream tool for Dataroom and other
+similar data exposure tools.
+
+- https://github.com/MTES-MCT/dataroom
+- https://mtes-mct.github.io/dataroom/
+
 * Requirements
 
 - [ ] Create a user by using an email address.
@@ -41,7 +52,4 @@
 ** 3 
 
 - [ ] Add/edit/remove lists of data sets
-
-
-
 
