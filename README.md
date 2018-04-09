@@ -95,7 +95,19 @@ similar data exposure tools.
 
 
 <tr>
-<td class="org-left">Date</td>
+<td class="org-left">Last update date</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Open data status</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Public link</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
