@@ -33,7 +33,9 @@ similar data exposure tools.
 | Keyword             |         |
 | License             |         |
 | Format              |         |
-| Date                |         |
+| Last update date    |         |
+| Open data status    |         |
+| Public link         |         |
 
 * MVPs
 
