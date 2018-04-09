@@ -1,0 +1,47 @@
+#+title: Datamap: build simple data tables collaboratively
+
+* Requirements
+
+- [ ] Create a user by using an email address.
+- [ ] Restrict user creation by matching against allowed emails adresses.
+- [ ] A user can CRUD a list of data sets (for which she’s an admin).
+- [ ] A list admin can accept/add/remove users from a list.
+- [ ] An authorized user can CRUD data sets to a list.
+- [ ] Each list is exposed as =json=: =https://[service]/[list].json=
+
+* Schema of a data set
+
+| Column              | Example |
+|---------------------+---------|
+| Name of the dataset |         |
+| Description         |         |
+| Type of service     |         |
+| Name of service     |         |
+| Public policy       |         |
+| Source              |         |
+| Keyword             |         |
+| License             |         |
+| Format              |         |
+| Date                |         |
+
+* MVPs
+
+** 1
+
+- [ ] User email registration
+- [ ] Only one list of data sets
+- [ ] Add a data set
+- [ ] expose as json
+
+** 2
+
+- [ ] Restrict email registration
+- [ ] Remove/edit a data set
+
+** 3 
+
+- [ ] Add/edit/remove lists of data sets
+
+
+
+
