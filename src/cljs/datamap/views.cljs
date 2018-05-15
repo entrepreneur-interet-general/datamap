@@ -4,7 +4,8 @@
             [datamap.db :as db]
             [antizer.reagent :as ant]
             [datamap.subs :as subs]
-            [datamap.events :as events]))
+            [datamap.events :as events]
+            [reagent.cookies :as cookies]))
 
 (def pagination {:show-size-changer true
                  :page-size-options ["5" "10" "20"]
@@ -188,6 +189,22 @@
     [ant/layout-header {:class "banner"}
      [ant/row {:gutter 36}
       [ant/col {:span 2}
+       [ant/button
+        {:type "primary"
+         :on-click
+         ;; #(.log js/console (cookies/count))
+         #(.log js/console (cookies/set! :blo (clj->js {:a "un" :b "deux"})))
+         }
+        "Set cookie"]]
+      [ant/col {:span 2}
+       [ant/button
+        {:type "primary"
+         :on-click
+         ;; #(.log js/console (cookies/count))
+         #(.log js/console (cookies/get :bla))
+         }
+        "Get cookie"]]
+      [ant/col {:span 2}
        [ant/popover {:content "La liste des jeux de données"}
         [ant/button
          {:type     "primary"
@@ -199,7 +216,7 @@
          {:type     "primary"
           :on-click #(re-frame/dispatch [::events/set-view! :form])}
          "Ajouter"]]]
-      [ant/col {:span 1 :offset 17}
+      [ant/col {:span 1 :offset 13}
        [ant/popover {:content "Informations"}
         [ant/button
          {:on-click #(re-frame/dispatch [::events/set-about-modal! :true])}

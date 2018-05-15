@@ -23,10 +23,12 @@
                  [venantius/accountant "0.2.4"
                   :exclusions [org.clojure/tools.reader]]
                  ;; Keep it at the end to avoid conflict wrt tools.reader
-                 [ring-middleware-format "0.7.2"]]
+                 [ring-middleware-format "0.7.2"]
+                 [reagent-utils "0.3.1"]
+                 [org.clojure/test.check "0.9.0"]]
   :target-path "target/%s"
   :main datamap.server
-  :source-paths ["src/clj"]
+  :source-paths ["src/clj" "src/cljc"]
   :resource-paths ["resources"]
   :plugins [[lein-cljsbuild "1.1.5"]]
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
