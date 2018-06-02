@@ -5,15 +5,15 @@
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.postgresql/postgresql "42.2.2"]
-                 [com.layerware/hugsql "0.4.8"]
+                 [com.layerware/hugsql "0.4.9"]
                  [cheshire "5.8.0"]
                  [ring-server "0.5.0"]
                  [ring "1.6.3"]
-                 [ring/ring-defaults "0.3.1"]
+                 [ring/ring-defaults "0.3.2"]
                  [compojure "1.6.1"]
                  [hiccup "1.0.5"]
                  [org.clojure/clojurescript "1.10.238"]
-                 [reagent "0.8.0"]
+                 [reagent "0.8.1"]
                  [re-frame "0.10.5"]
                  ;; FIXME: needed but why?
                  [com.andrewmcveigh/cljs-time "0.5.2"]
